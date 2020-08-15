@@ -1,0 +1,194 @@
+body {
+	margin: auto;
+	font-family: Open Sans, Arial, Helvetica;
+	font-size: 10pt;
+}
+
+.center-content {
+	display: grid;
+  	height: 100vh;
+  	margin: 0;
+}
+
+.splash{
+	color:white;
+	background-image: url(images/bwmountains.jpg);
+	background-repeat:round;
+	background-attachment: scroll;
+	max-height: 600px;
+	min-height: 400px;
+}
+
+.header {
+	text-align: center;
+	padding-top: 60px;
+}
+
+.header-title {
+	font-family: Roboto, Open Sans, Arial, Helvetica;
+	font-size: 30pt;
+	text-transform: uppercase;
+	padding-top: 18px;
+	letter-spacing: 2px;
+}
+
+.header-subtitle {
+    font-size: 12pt;	
+    text-transform: uppercase;
+    color: lightskyblue;
+	padding: 20px 0px;
+}
+
+.header-links {
+	padding: 11px 10px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    border: black;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.header-links:hover {
+	color: lightskyblue;
+	cursor: pointer;
+}
+
+.section {
+	text-align: center;
+	margin: auto;
+}
+
+.section-title {
+	text-align: center;
+	padding: 30px;
+	text-transform: uppercase; 
+	font-size: 16pt;
+	letter-spacing: 2px;
+	max-width: 800px;
+	display: inline-block;
+}
+
+#recent-projects {
+	width: 100%;
+	background-image: linear-gradient(180deg,#e8e8e8,lightblue);
+	padding-bottom: 50px;
+}
+
+#quote {
+	width: 100%;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/gears.jpg);	
+	color:white;
+	min-height: 300px;
+	place-content: center center;
+    display: inline-grid; 
+}
+
+.project-list {
+	width: 100%;
+    margin: auto;
+    display: inline-block;
+}
+
+.project {
+	margin: 10px !important;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 3px;
+    border: 1px solid silver;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+}	
+
+.img-hover-zoom {
+  	overflow: hidden;
+}
+
+.img-hover-zoom img {
+	width: 100%;
+}
+
+.img-hover-zoom:hover img {
+  	
+}
+
+.project-details {
+	padding: 20px;
+	background-color: white;
+    color: #404040;
+    min-height: 80px;
+}
+
+.sm-button {
+	width: 30px;
+	height: auto;
+}
+
+a.no-style:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a.no-style:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+#tech-skills {
+	background-image: url(images/interlockinggrid.jpg);
+	background-size: cover;
+	padding-bottom: 50px;
+}
+
+.skill {
+	text-shadow: 2px 2px 5px grey;
+    font-size: 12pt;
+    border: 1px solid silver;
+    border-radius: 10px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    display: inline-grid;
+    place-content: center center;
+    align-items: center;
+    text-align: center;
+    min-height: 70px;
+    vertical-align: middle;
+    background-color: white;
+}
+
+#connect-with-me {
+	padding-bottom: 70px;
+	background-color: black;
+	color: white;
+}
+
+#connect-with-me a {
+	text-transform: uppercase;
+	color: lightskyblue;
+}
+
+.contact-link {
+	width: 200px;
+}
+
+
+@media only screen and (max-width: 375px) {
+
+	.header-title {
+		font-size: 24pt;
+	}
+
+	.header-subtitle {
+		font-size: 10pt;
+	}
+
+}
