@@ -1,1 +1,299 @@
-Github Developer Landing Page...
+<html>
+<head>
+	<link href="images/gear.ico" rel="icon" type="image/x-icon" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<meta charset='UTF-8'/>
+	<meta content='width=device-width, initial-scale=1' name='viewport'/>
+	<meta content='text/html; charset=UTF-8' name='Content-Type'/>
+	<meta content='Programmer, Fiction Writer, Runner' name='description'/>
+	<meta content='Programmer, Fiction Writer, Runner' name='keywords'/>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+/*
+This snippet provides smooth scroll effect
+*/
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<style>
+
+body {
+	margin: auto;
+	font-family: Open Sans, Arial, Helvetica;
+	font-size: 10pt;
+}
+
+.center-content {
+	display: grid;
+  	height: 100vh;
+  	margin: 0;
+}
+
+.splash{
+	color:white;
+	background-image: url(images/bwmountains.jpg);
+	background-repeat:round;
+	background-attachment: scroll;
+	max-height: 600px;
+	min-height: 400px;
+}
+
+.header {
+	text-align: center;
+	padding-top: 60px;
+}
+
+.header-title {
+	font-family: Roboto, Open Sans, Arial, Helvetica;
+	font-size: 30pt;
+	text-transform: uppercase;
+	padding-top: 18px;
+	letter-spacing: 2px;
+}
+
+.header-subtitle {
+    font-size: 12pt;	
+    text-transform: uppercase;
+    color: lightskyblue;
+	padding: 20px 0px;
+}
+
+.header-links {
+	padding: 11px 10px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    border: black;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.header-links:hover {
+	color: lightskyblue;
+	cursor: pointer;
+}
+
+.section {
+	text-align: center;
+	margin: auto;
+}
+
+.section-title {
+	text-align: center;
+	padding: 30px;
+	text-transform: uppercase; 
+	font-size: 16pt;
+	letter-spacing: 2px;
+	max-width: 800px;
+	display: inline-block;
+}
+
+#recent-projects {
+	width: 100%;
+	background-image: linear-gradient(180deg,#e8e8e8,lightblue);
+	padding-bottom: 50px;
+}
+
+#quote {
+	width: 100%;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/gears.jpg);	
+	color:white;
+	min-height: 300px;
+	place-content: center center;
+    display: inline-grid; 
+}
+
+.project-list {
+	width: 100%;
+    margin: auto;
+    display: inline-block;
+}
+
+.project {
+	margin: 10px !important;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 3px;
+    border: 1px solid silver;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+}	
+
+.img-hover-zoom {
+  	overflow: hidden;
+}
+
+.img-hover-zoom img {
+	width: 100%;
+}
+
+.img-hover-zoom:hover img {
+  	
+}
+
+.project-details {
+	padding: 20px;
+	background-color: white;
+    color: #404040;
+    min-height: 80px;
+}
+
+.sm-button {
+	width: 30px;
+	height: auto;
+}
+
+a.no-style:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a.no-style:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+#tech-skills {
+	background-image: url(images/interlockinggrid.jpg);
+	background-size: cover;
+	padding-bottom: 50px;
+}
+
+.skill {
+	text-shadow: 2px 2px 5px grey;
+    font-size: 12pt;
+    border: 1px solid silver;
+    border-radius: 10px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    display: inline-grid;
+    place-content: center center;
+    align-items: center;
+    text-align: center;
+    min-height: 70px;
+    vertical-align: middle;
+    background-color: white;
+}
+
+#connect-with-me {
+	padding-bottom: 70px;
+	background-color: black;
+	color: white;
+}
+
+#connect-with-me a {
+	text-transform: uppercase;
+	color: lightskyblue;
+}
+
+.contact-link {
+	width: 200px;
+}
+
+
+@media only screen and (max-width: 375px) {
+
+	.header-title {
+		font-size: 24pt;
+	}
+
+	.header-subtitle {
+		font-size: 10pt;
+	}
+
+}
+
+</style>
+
+<body>
+
+	<div>
+		<div class="splash center-content">
+			<div class="header">
+				<div class="header-title">Tanya Miranda</div>
+				<div class="header-subtitle">Programmer &#8226; Fiction Writer &#8226; Runner</div>
+				<a class="no-style" href="#recent-projects"><div class="header-links">Recent Projects</div></a>
+				<a class="no-style" href="#tech-skills"><div class="header-links">Tech Skills</div></a>
+				<a class="no-style" href="#connect-with-me"><div class="header-links">Connect With Me</div></a>
+				<a class="no-style" target="_blank" href="https://www.tanyamiranda.com/p/books.html"><div class="header-links">Read My Novels</div></a>
+			</div>
+		</div>
+		<div id="recent-projects" class='section'>
+			<div class='section-title'>Recent Projects</div>
+			<div class='project-list'>
+				<div class='project'>
+					<div class="project-thumbnail img-hover-zoom"><a target="_blank" href="https://tanyamiranda.github.io/covid19-by-state/"><img src="images/screenshot_covid19charts.png"/></a></div>
+					<div class="project-details">View current COVID-19 data from the Center for Disease Control and the COVID Tracking Project in this application built in React using Chart.js</div>	
+				</div>
+				<div class='project'>
+					<div class="project-thumbnail img-hover-zoom"><a target="_blank" href="https://urbandragonwear.herokuapp.com/"><img src="images/screenshot_urbandragonwear.png"/></a></div>
+					<div class="project-details">Urban Dragon Wear is an e-commerce site built in React using Firebase for storage and authentication, and Stripe for credit card processing.</div>
+				</div>
+				<div class='project'>
+					<div class="project-thumbnail img-hover-zoom"><a target="_blank" href="https://tanyamiranda.github.io/memory-game/"><img src="images/screenshot_memorygame.png"/></a></div>
+					<div class="project-details">Train your brain with this classic card-flip game. Download it and use it offline. This Progressive Web Application is built in React.</div>	
+				</div>
+			</div>
+		</div>
+		<div id="quote" class="section">
+			<div class='section-title'>"Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”<br/><br/>&#8722; Martin Fowler</div>
+		</div>
+		<div id="tech-skills" class='contacts section'>
+			<div class='section-title'>Tech Skills</div>
+			<div class="skills-list">
+				<div class="skill">Web Development<br/>(HTML, CSS and Javascript)</div>
+				<div class="skill">Responsive Web Design</div>
+				<div class="skill">React Framework</div>
+				<div class="skill">Java/J2EE Enterprise Systems</div>
+				<div class="skill">E-commerce End-to-End Systems Integration</div>
+				<div class="skill">Image Manipulation/Processing<br/>(Some Vecor Graphics)</div>
+				<div class="skill">Overall Creator of Awesome Sh**</div>
+			</div>
+		</div>
+		<div id="connect-with-me" class='contacts section'>
+			<div class='section-title'>Connect With Me</div>
+			<div>
+				<a href="mailto:tanya.miranda@gmail.com" target='_blank' class="no-style">tanya.miranda@gmail.com</a><br/><br/>
+
+				<a href='https://www.linkedin.com/in/tanyamiranda/' target='_blank' title='LinkedIn'><img class="contact-link" alt='LinkedIn' src='images/contact-linked-in.png' /></a>
+				
+				<a href='https://github.com/tanyamiranda' target='_blank' title='GitHub'><img class="contact-link" alt='GitHub' src='images/contact-github.png' /></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
