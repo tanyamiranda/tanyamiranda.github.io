@@ -52,6 +52,7 @@ body {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 2px;
+    display: block;
 }
 
 .header-links:hover {
@@ -134,12 +135,10 @@ body {
 
 a.no-style:link {
     text-decoration: inherit;
-    color: inherit;
 }
 
 a.no-style:visited {
     text-decoration: inherit;
-    color: inherit;
 }
 
 #tech-skills {
