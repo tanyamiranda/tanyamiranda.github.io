@@ -4,6 +4,20 @@ body {
 	font-size: 10pt;
 }
 
+/* 
+Universal button display and flow. 
+Specific button design defined by other classes
+*/
+.button {
+	display: inline-grid;
+    place-content: center center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    margin: 10px;
+}
+
 .center-content {
 	display: grid;
   	height: 100vh;
@@ -15,20 +29,18 @@ body {
 	background-image: url(images/bwmountains.jpg);
 	background-repeat:round;
 	background-attachment: scroll;
-	max-height: 600px;
 	min-height: 400px;
 }
 
 .header {
 	text-align: center;
-	padding-top: 60px;
+	padding-top: calc(100vh * .15);
 }
 
 .header-title {
 	font-family: Roboto, Open Sans, Arial, Helvetica;
 	font-size: 30pt;
 	text-transform: uppercase;
-	padding-top: 18px;
 	letter-spacing: 2px;
 }
 
@@ -39,26 +51,27 @@ body {
 	padding: 20px 0px;
 }
 
-.header-links {
-	padding: 11px 10px;
-    width: 200px;
-    text-align: center;
-    margin: auto;
+.header-button-list {
+	max-width: 300px;
+	margin: auto;
+}
+
+.header-button {
+    width: 250px;
+    min-height: 60px;
     border: black;
     background-color: black;
     color: white;
-    border-radius: 10px;
-    margin-top: 10px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 2px;
-    display: block;
 }
 
-.header-links:hover {
+.header-button:hover {
 	color: lightskyblue;
 	cursor: pointer;
 }
+
 
 .section {
 	text-align: center;
@@ -147,20 +160,17 @@ a.no-style:visited {
 	padding-bottom: 50px;
 }
 
-.skill {
+
+.skills-button-list {
+	margin: auto;
+}
+
+.skills-button {
 	text-shadow: 2px 2px 5px grey;
     font-size: 12pt;
     border: 1px solid silver;
-    border-radius: 10px;
     width: 300px;
-    margin: 10px;
-    text-align: center;
-    display: inline-grid;
-    place-content: center center;
-    align-items: center;
-    text-align: center;
     min-height: 70px;
-    vertical-align: middle;
     background-color: white;
 }
 
@@ -189,5 +199,19 @@ a.no-style:visited {
 	.header-subtitle {
 		font-size: 10pt;
 	}
+
+}
+
+/*
+Increase width if buttons don't fit height-wise,
+as when in landscape mode for some phones.
+*/
+@media only screen and (max-height: 550px) {
+
+	.header-button-list {
+		max-width: 600px;
+		margin: auto;
+	}
+
 
 }
