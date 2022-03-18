@@ -156,12 +156,12 @@ function getBookDetailsHTML(book, cssClass, shortBlurb) {
 }
 
 
-function loadBookThumbnails() {
+function loadBookThumbnails(small) {
 
     var html = "<div class='all-books'>";
 
     BOOK_META_DATA.forEach(book => {
-        html += "<div class='book-thumbnail'>" + 
+        html += "<div class='book-thumbnail" + (small ? " smallest-thumbnail" : "") + "'>" + 
                     "<a href='" + bookdetailsurl + "?bookId=" + book.id + "' ><img src='" + contentlocation + book.image + "' /></a>" + 
                 "</div>"
     });

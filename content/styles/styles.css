@@ -262,26 +262,6 @@ a:active  { color:#8a0886; text-decoration:none; }
     padding: 15px;
 }
 
-.personal-message {
-    margin: auto;
-    display: block;
-    font-family: "Dancing Script";
-    font-size: 24pt;
-    text-align: center;
-    padding: 20px 0;
-    width: 90%;
-}
-
-.cozy-message {
-    margin: auto;
-    display: block;
-    font-family: cursive;
-    font-size: 16pt;
-    text-align: center;
-    padding: 20px;
-    max-width: 500px;
-}
-
 /* 
 ***********************
 Adjust middle sections for tablets
