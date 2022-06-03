@@ -1,6 +1,16 @@
+<!--
+
+FOR LIVE PAGE
 <link href='https://tanyamiranda.github.io/content/fonts/fonts.css' rel='stylesheet' type='text/css'/>
 <link href='https://tanyamiranda.github.io/content/styles/books.css' rel='stylesheet' type='text/css'/>
 <script src="https://tanyamiranda.github.io/content/scripts/books.js"></script>
+
+-->
+
+<link href='../content/fonts/fonts.css' rel='stylesheet' type='text/css'/>
+<link href='../content/styles/books.css' rel='stylesheet' type='text/css'/>
+<script src="../content/scripts/books.js"></script>
+
 <div id="book-details-page">
 	<div id="book-list-container" class='middleContainer book-banners'>
 </div>
@@ -8,6 +18,9 @@
     const urlParams = new URLSearchParams(window.location.search);
     const bookId = urlParams.get('bookId');
     const book = BOOK_META_DATA.find(rec => rec.id === bookId)
+
+    // THIS HAS TO BE UPDATED FOR BLOGGER
+    contentlocation = "../content";
 
     if (bookId !== null || book !== undefined)   
         loadFullBookDetails(book);
