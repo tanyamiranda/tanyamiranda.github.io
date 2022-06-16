@@ -3,6 +3,38 @@ var bookdetailsurl="/book-details.html";
 
 const BOOK_META_DATA = [
     {
+        id:"the-dragon-amulet",
+        title: "The Dragon Amulet",
+        subtitle: "Family Relics Book 3",
+        image:"/images/books-TheDragonAmulet.jpg",
+        tagline: "Family is the only treasure worth sacrificing for.",
+        shortblurb: "Can Jasmyn wield her grandmother's magic to save her family, or will Ryland steal her powers and erase her bloodline from history?<br/><br/>Jasmyn's entire family, her sole existence, is at stake, and time is running out.",
+        fullblurb: "Jasmyn has suffered more loss than she can bear, but she finds hope when she learns of her grandmother's darkest secret: magic that can reverse time itself. Along with her coven sisters, she journeys to the only place the enchantment will work—the Isle of Enid. Although Jasmyn never learned the spell, she hopes the island's supernatural forces will give her insight and help her turn back the clock.<br/><br/>But Jasmyn isn't the only one after this magic. Ryland, an immortal seer, devises a plan to use the spell to go back centuries to kill Finna, Jasmyn's great-grandmother, and change the fate of his people. If he succeeds, Ryland will erase Finna's bloodline from history.<br/><br/>Jasmyn's entire family, her sole existence, is at stake, and time is running out.",
+        shoplink: "",
+        amazon: "https://amzn.to/3NYhA49",
+        nook: "",
+        ibooks: "",
+        google: "",
+        smashwords: "",
+        kobo: ""
+    },
+    {
+        id:"the-onyx-ring",
+        title: "The Onyx Ring",
+        subtitle: "Family Relics Book 2",
+        image:"/images/books-TheOnyxRing.jpg",
+        tagline: "The blood that binds a family bleeds the darkest.",
+        shortblurb: "Will Logan reject his clan's magic to protect his sister, or will he fulfill his clan's destiny and destroy Jasmyn's coven?<br/><br/>With such opposing magical forces, even the tightest family bonds can break.",
+        fullblurb: "Jasmyn blames herself for her family's tragedy, and she's confident her family blames her too. The guilt is too much to bear, so instead of returning home, she joins her coven to focus on developing her grandmother's magic.<br/><br/>Logan understands Jasmyn's pain and respects his sister's desire to live apart, but he doesn't stay away for too long. An enemy clan of sorcerers claims Logan as one of their own, and the mysterious bond of an ancient brotherhood takes hold of him. An age-old rivalry between Logan's clan and Jasmyn's coven reawakens, and the violence it unearths threatens all they hold dear.<br/><br/>Will Logan reject the brotherhood to protect his sister, or will he fulfill his clan's destiny and destroy Jasmyn's coven? With such opposing magical forces, even the tightest family bonds can break.",
+        shoplink: "https://bookstore.tanyamiranda.com/b/grk7P",
+        amazon: "http://www.amzn.to/2JLfdRb",
+        nook: "http://www.bit.ly/2MtgNJk",
+        ibooks: "http://www.apple.co/2MAyOFs",
+        google: "http://www.bit.ly/2ldje69",
+        smashwords: "http://www.bit.ly/2ybNUhx",
+        kobo: "http://www.bit.ly/2lbCm4J"
+    },
+    {
         id:"the-box-of-souls",
         title: "The Box Of Souls",
         subtitle: "Family Relics Book 1",
@@ -19,37 +51,21 @@ const BOOK_META_DATA = [
         kobo: "http://www.bit.ly/2JE4Nmr"
     },
     {
-        id:"the-onyx-ring",
-        title: "The Onyx Ring",
-        subtitle: "Family Relics Book 2",
-        image:"/images/books-TheOnyxRing.jpg",
-        tagline: "The blood that binds a family bleeds the darkest.",
-        shortblurb: "Jasmyn blames herself for her family's tragedy, and she's confident her family blames her too. Instead of returning home, she joins her coven to focus on developing her grandmother's magic. When an enemy clan threatens the family, her brother Logan goes in search of his estranged sister. Can Jasmyn and Logan survive the magical forces tearing their family apart?",
-        fullblurb: "Jasmyn blames herself for her family’s tragedy, and she’s confident her family blames her too. The guilt is too much to bear, so instead of returning home, she joins her coven to focus on developing her grandmother’s magic.<br/><br/>Logan understands Jasmyn’s pain and respects his sister’s desire to live apart, but he doesn’t stay away for too long. An enemy clan of sorcerers claims Logan as one of their own, and the mysterious bond of an ancient brotherhood takes hold of him. An age-old rivalry between Logan’s clan and Jasmyn’s coven reawakens, and the violence it unearths threatens all they hold dear.<br/><br/>Will Logan reject the brotherhood to protect his sister, or will he fulfill his clan’s destiny and destroy Jasmyn’s coven? With such opposing magical forces, even the tightest family bonds can break.",
-        shoplink: "https://bookstore.tanyamiranda.com/b/grk7P",
-        amazon: "http://www.amzn.to/2JLfdRb",
-        nook: "http://www.bit.ly/2MtgNJk",
-        ibooks: "http://www.apple.co/2MAyOFs",
-        google: "http://www.bit.ly/2ldje69",
-        smashwords: "http://www.bit.ly/2ybNUhx",
-        kobo: "http://www.bit.ly/2lbCm4J"
-    },
-    {
         id:"a-selfish-moment",
         title: "A Selfish Moment",
         subtitle: "",
         image:"/images/books-ASelfishMoment.jpg",
         tagline: "Sometimes you have to let yourself go.",
         shortblurb: "<p>Neither Jubilee nor Everett can let go of that first night together. Was that one perfect evening a fluke, or was it a preview of something greater than they ever imagined?</p>",
-        fullblurb: "Jubilee Ray wakes up Saturday morning in a strange bed with a handsome guy asleep at her side and no memory of how she got there. Everett Salerno wakes up ecstatic about the incredible night he spent with Jubilee. She can’t wait to get out of his apartment and he can’t wait to start their romance. Jubilee is a blackout drunk. Everett is drunk with love.<br/><br/>Their one-night-stand ends almost as quickly as it began, however fate has other plans in mind. In the next three days filled with impossible coincidences, humiliating moments, and mouthwatering recollections, Everett can’t find the right moment to express his intentions and Jubilee can’t let go of her past long enough to really give Everett a chance.<br/><br/>Neither Jubilee nor Everett can let go of that first night together. Was that one perfect evening a fluke, or was it a preview of something greater than they ever imagined?",
+        fullblurb: "Jubilee Ray wakes up Saturday morning in a strange bed with a handsome guy asleep at her side and no memory of how she got there. Everett Salerno wakes up ecstatic about the incredible night he spent with Jubilee. She can't wait to get out of his apartment and he can't wait to start their romance. Jubilee is a blackout drunk. Everett is drunk with love.<br/><br/>Their one-night-stand ends almost as quickly as it began, however fate has other plans in mind. In the next three days filled with impossible coincidences, humiliating moments, and mouthwatering recollections, Everett can't find the right moment to express his intentions and Jubilee can't let go of her past long enough to really give Everett a chance.<br/><br/>Neither Jubilee nor Everett can let go of that first night together. Was that one perfect evening a fluke, or was it a preview of something greater than they ever imagined?",
         shoplink: "https://bookstore.tanyamiranda.com/b/jthdG",
         amazon: "http://www.amzn.to/1mvkEan",
-        /*nook: "http://www.bit.ly/2MCTcF7",
+        nook: "http://www.bit.ly/2MCTcF7",
         ibooks: "http://www.apple.co/2tTnZpy",
         google: "http://www.bit.ly/2tKixpC",
         smashwords: "http://www.bit.ly/2KF9MH4",
         kobo: "http://www.bit.ly/2tJICp7"
-        */
+        
     },
     {
         id:"isabel-and-leo",
@@ -61,12 +77,12 @@ const BOOK_META_DATA = [
         fullblurb: "Finding romance gets harder after so many years together, but Isabel and Leo make it work. This collection of short stories takes a peek into their lives as a competitive couple continually outwitting one another, as parents to two children who are too wise for their young ages, and as grownups who shoot foam dart guns like military snipers while attempting to act like responsible adults.<br/><br/>Between sassy kids and demanding careers, heartbreaks and frustrations, a quick kiss or a love tap are sometimes the only intimacy they can get. And when the moment comes, they jump all over it.<br/><br/>These are their stories.",
         shoplink: "https://bookstore.tanyamiranda.com/b/JoDKc",
         amazon: "http://www.amzn.to/2lKfPvX",
-        /*nook: "http://www.bit.ly/2tH0rVO",
+        nook: "http://www.bit.ly/2tH0rVO",
         ibooks: "http://www.apple.co/2MF3QeF",
         google: "http://www.bit.ly/2NgLr95",
         smashwords: "http://www.bit.ly/2lJvpYR",
         kobo: "http://www.bit.ly/2lNyibb"
-        */
+        
     },
     {
         id:"distant-origins",
@@ -78,12 +94,12 @@ const BOOK_META_DATA = [
         fullblurb: "Sarah Winters is an orphan. Her origin has never interested her until she meets Darren McAvoy and can communicate with him telepathically. They are of a human-like alien species called the Dramani who possess advanced physical and mental abilities. Sarah's a late bloomer for her kind, but on her twenty-fifth birthday she finds out just how powerful Dramani women can be.<br/><br/>As she digs further into what it means to be Dramani, Sarah learns the women are being targeted for elimination. She joins a top-secret military mission to rescue the only other surviving woman in the heart of Death Valley and finds there is more to the disappearances than the military knows.<br/><br/>Only Sarah's powerful telekinetic ability can stop the destruction of her species, but will it be enough to save herself?",
         shoplink: "https://bookstore.tanyamiranda.com/b/QHnsd",
         amazon: "https://www.amazon.com/dp/B0B343T3BN",
-        /*nook: "http://www.bit.ly/2KAZmIB",
+        nook: "http://www.bit.ly/2KAZmIB",
         ibooks: "http://www.apple.co/2tHbGxu",
         google: "http://www.bit.ly/2NdVzzv",
         smashwords: "http://www.bit.ly/2z65eVY",
         kobo: "http://www.bit.ly/2KyQzXI"
-        */
+        
     },
 
 ];
@@ -139,19 +155,30 @@ function getBookDetailsHTML(book, cssClass, shortBlurb) {
                         html += "<div class='myStoreButton'><a href='" + book.amazon + "' target='_blank'>Buy now on Amazon!</a></div>";
 
                         /*
-                        if(book.shoplink !=null && book.shoplink !== "") {
+                        if(book.shoplink !=null && book.shoplink !== "") 
                             html += "<div class='myStoreButton'><a href='" + book.shoplink + "' target='_blank'>Buy the eBook in my shop!</a></div>";
-                        } 
 
-                        html += "<div class='book-links'><p>Get your copy from your favorite bookseller:</p>" + 
-                            "<a href='" + book.amazon + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-amazon.png'/></a>" + 
-                            "<a href='" + book.ibooks + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-ibooks.png'/></a>" +
-                            "<a href='" + book.google + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-google.png'/></a>" +
-                            "<a href='" + book.kobo + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-nook.png'/></a>" +
-                            "<a href='" + book.nook + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-kobo.png'/></a>" +
-                            "<a href='" + book.smashwords + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-smashwords.png'/></a>" +
-                        */
+                        html += "<div class='book-links'><p>Get your copy from your favorite bookseller:</p>";
+
+                        if(book.amazon !=null && book.amazon !== "")  
+                            html += "<a href='" + book.amazon + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-amazon.png'/></a>" ;
                         
+                        if(book.ibooks !=null && book.ibooks !== "")  
+                            html += "<a href='" + book.ibooks + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-ibooks.png'/></a>";
+                        
+                        if(book.google !=null && book.google !== "")  
+                            html += "<a href='" + book.google + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-google.png'/></a>";
+                        
+                        if(book.kobo !=null && book.kobo !== "")  
+                            html += "<a href='" + book.kobo + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-nook.png'/></a>";
+                            
+                        if(book.nook !=null && book.nook !== "")  
+                            html += "<a href='" + book.nook + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-kobo.png'/></a>"; 
+                    
+                        if(book.smashwords !=null && book.smashwords !== "")  
+                            html += "<a href='" + book.smashwords + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-smashwords.png'/></a>";
+                        */
+                       
                         html += "</div>" +        
                     "</div>" + 
                 "</div>" + 
