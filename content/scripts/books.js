@@ -151,10 +151,11 @@ function getBookDetailsHTML(book, cssClass, shortBlurb) {
                         "<div class='book-details-subtitle'>" + book.subtitle + "</div>" + 
                         "<div class='book-details-tagline'>" + book.tagline + "</div>" + 
                         "<div class='book-details-shortblurb'>" + (shortBlurb ? book.shortblurb : book.fullblurb) + "</div>"       
-                                                
-                        html += "<div class='myStoreButton'><a href='" + book.amazon + "' target='_blank'>Buy now on Amazon!</a></div>";
-
+                          
                         /*
+                        html += "<div class='myStoreButton'><a href='" + book.amazon + "' target='_blank'>Buy now on Amazon!</a></div>";
+                        */
+                        
                         if(book.shoplink !=null && book.shoplink !== "") 
                             html += "<div class='myStoreButton'><a href='" + book.shoplink + "' target='_blank'>Buy the eBook in my shop!</a></div>";
 
@@ -177,7 +178,7 @@ function getBookDetailsHTML(book, cssClass, shortBlurb) {
                     
                         if(book.smashwords !=null && book.smashwords !== "")  
                             html += "<a href='" + book.smashwords + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-smashwords.png'/></a>";
-                        */
+                        
                        
                         html += "</div>" +        
                     "</div>" + 
