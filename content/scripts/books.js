@@ -1,5 +1,6 @@
 var contentlocation = "";
 var bookdetailsurl="/book-details.html";
+const GO_WIDE = false;
 
 const BOOK_META_DATA = [
     {
@@ -152,33 +153,34 @@ function getBookDetailsHTML(book, cssClass, shortBlurb) {
                         "<div class='book-details-tagline'>" + book.tagline + "</div>" + 
                         "<div class='book-details-shortblurb'>" + (shortBlurb ? book.shortblurb : book.fullblurb) + "</div>"       
                           
-                        /*
-                        html += "<div class='myStoreButton'><a href='" + book.amazon + "' target='_blank'>Buy now on Amazon!</a></div>";
-                        */
-                        
-                        if(book.shoplink !=null && book.shoplink !== "") 
-                            html += "<div class='myStoreButton'><a href='" + book.shoplink + "' target='_blank'>Buy the eBook in my shop!</a></div>";
-
-                        html += "<div class='book-links'><p>Get your copy from your favorite bookseller:</p>";
-
-                        if(book.amazon !=null && book.amazon !== "")  
-                            html += "<a href='" + book.amazon + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-amazon.png'/></a>" ;
-                        
-                        if(book.ibooks !=null && book.ibooks !== "")  
-                            html += "<a href='" + book.ibooks + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-ibooks.png'/></a>";
-                        
-                        if(book.google !=null && book.google !== "")  
-                            html += "<a href='" + book.google + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-google.png'/></a>";
-                        
-                        if(book.kobo !=null && book.kobo !== "")  
-                            html += "<a href='" + book.kobo + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-nook.png'/></a>";
+                        if (!GO_WIDE) {
+                            html += "<div class='myStoreButton'><a href='" + book.amazon + "' target='_blank'>Buy now on Amazon!</a></div>";
+                        }
+                        else {
                             
-                        if(book.nook !=null && book.nook !== "")  
-                            html += "<a href='" + book.nook + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-kobo.png'/></a>"; 
-                    
-                        if(book.smashwords !=null && book.smashwords !== "")  
-                            html += "<a href='" + book.smashwords + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-smashwords.png'/></a>";
+                            if(book.shoplink !=null && book.shoplink !== "") 
+                                html += "<div class='myStoreButton'><a href='" + book.shoplink + "' target='_blank'>Buy the eBook in my shop!</a></div>";
+
+                            html += "<div class='book-links'><p>Get your copy from your favorite bookseller:</p>";
+
+                            if(book.amazon !=null && book.amazon !== "")  
+                                html += "<a href='" + book.amazon + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-amazon.png'/></a>" ;
+                            
+                            if(book.ibooks !=null && book.ibooks !== "")  
+                                html += "<a href='" + book.ibooks + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-ibooks.png'/></a>";
+                            
+                            if(book.google !=null && book.google !== "")  
+                                html += "<a href='" + book.google + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-google.png'/></a>";
+                            
+                            if(book.kobo !=null && book.kobo !== "")  
+                                html += "<a href='" + book.kobo + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-nook.png'/></a>";
+                                
+                            if(book.nook !=null && book.nook !== "")  
+                                html += "<a href='" + book.nook + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-kobo.png'/></a>"; 
                         
+                            if(book.smashwords !=null && book.smashwords !== "")  
+                                html += "<a href='" + book.smashwords + "' target='_blank'><img class='bookSellerButton' src='" + contentlocation + "/images/store-smashwords.png'/></a>";
+                            }
                        
                         html += "</div>" +        
                     "</div>" + 
