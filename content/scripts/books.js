@@ -1,4 +1,4 @@
-var contentlocation = "";
+var contentlocation = ""; /** TO BE SET ON BLOGGER PAGE */
 var bookdetailsurl="/book-details.html";
 const GO_WIDE = false;
 
@@ -208,5 +208,37 @@ function loadBookThumbnails(small) {
 
     var bookList = document.getElementById("book-list-container");
     bookList.innerHTML = html;
+
+}
+
+function loadBookVendorLinks() {
+
+    html = ""
+
+    if (!GO_WIDE) {
+        html += "<p><center><div class='myStoreButton'><a href='https://www.amazon.com/Tanya-Miranda/e/B00A3J42NE' >Buy now on Amazon!</a></div></center></p>"
+    }
+    else{
+
+        html += "<p class='cozy-message'>Support an independent author and small business owner by purchasing your copy at my shop!</p>" + 
+            "<p><center><div class='myStoreButton'><a href='https://bookstore.tanyamiranda.com/' >Visit My Shop</a></div></center></p>" + 
+            "<p class='cozy-message'>My books are also available at all major booksellers:</p>" + 
+            "<div id='all-books-footer'>" +
+                "<div>" +
+                    "<a href='https://www.amazon.com/Tanya-Miranda/e/B00A3J42NE/' target='_blank'><img class='bookSellerButton' src='https://tanyamiranda.github.io/content/images/store-amazon.png'></a>" +
+                    "<a href='https://itunes.apple.com/us/author/tanya-miranda/id641906457?mt=11' target='blank'><img class='bookSellerButton' src='https://tanyamiranda.github.io/content/images/store-ibooks.png'></a>" +
+                    "<a href='https://play.google.com/store/books/author?id=Tanya+Miranda' target='blank'><img class='bookSellerButton' src='https://tanyamiranda.github.io/content/images/store-google.png'></a>" +
+                    "<a href='https://www.barnesandnoble.com/s/%22Tanya%20Miranda%22' target='blank'><img class='bookSellerButton' src='https://tanyamiranda.github.io/content/images/store-nook.png'></a>" +
+                    "<a href='https://www.kobo.com/us/en/search?query=Tanya+Miranda&fcsearchfield=Author&sort=PriceAsc' target='blank'><img class='bookSellerButton' src='https://tanyamiranda.github.io/content/images/store-kobo.png'></a>" +
+                    "<a href='https://www.smashwords.com/profile/view/tanyamirandabooks' target='blank'><img class='bookSellerButton' src='https://tanyamiranda.github.io/content/images/store-smashwords.png'></a>" +
+                "</div>" +
+            "</div>";
+
+    }
+
+
+
+    var bookVendorList = document.getElementById("book-vendor-links");
+    bookVendorList.innerHTML = html
 
 }
