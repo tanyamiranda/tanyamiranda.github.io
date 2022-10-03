@@ -114,6 +114,19 @@ URL:      www.bluedragonflypublishing.com
 		color: #b40daf;
 	}
 
+	.menu-item-sm-list {
+		display: none;
+	}
+	.menu-item-sm {
+		display: inline-block;
+	}
+
+	.menu-item-sm img {
+		width: 25px;
+		height: auto;
+		vertical-align: middle;
+	}
+
 	.menu-initial, .menu-display, .menu-hide {
 		opacity: 1;
 	}
@@ -167,6 +180,11 @@ URL:      www.bluedragonflypublishing.com
 			display:block;
 			padding: 15px 0;
 		}
+
+		.menu-item-sm-list {
+			display: block;
+		}
+
 		@-webkit-keyframes drop-down {
 			100% { opacity: 1.0; }
 		}
@@ -370,6 +388,14 @@ URL:      www.bluedragonflypublishing.com
 			<a class='menu-item' disabled=true id="menu-item-shortstories" href='/search/label/Short%20Story?max-results=10'>Short Stories</a>
 			<a class='menu-item' disabled=true id="menu-item-aboutme" href='/p/about-me.html'>About Me</a>
 			<a class='menu-item' disabled=true href='https://bookstore.tanyamiranda.com/'>My Shop</a>
+			<div class='menu-item menu-item-sm-list'>
+				<a class='menu-item-sm' href='https://www.facebook.com/tanyamirandawriter' target='_blank' title='Facebook'>
+					<img alt='FaceBook' src='https://tanyamiranda.github.io/content/images/sm_facebook-pink.png'/></a>
+				<a class='menu-item-sm' href='https://www.instagram.com/tanyamirandawriter' target='_blank' title='Instagram'>
+					<img alt='Instagram' src='https://tanyamiranda.github.io/content/images/sm_instagram-pink.png'/></a>
+				<a class='menu-item-sm' href='https://www.twitter.com/tmirandawriter' target='_blank' title="Twitter" >
+					<img alt='Twitter'  src='https://tanyamiranda.github.io/content/images/sm_twitter-pink.png'/></a>
+			</div>
 		</div>
 		<script>
 			function toggleMenu() {
@@ -380,8 +406,6 @@ URL:      www.bluedragonflypublishing.com
 				else {
 					headerMenu.className = 'menu-hide';
 				}
-
-				console.log(x.className)
 			}
 		</script>
 	</div>
@@ -429,7 +453,7 @@ URL:      www.bluedragonflypublishing.com
 			</div>
 			
 			<div class='middleContainerRightSide' id='MainAreaRightSide'>
-				<div id='floatingWidgetList'>
+				<div id='floatingWidgetList'>	
 					
 					<!-- SOCIAL MEDIA LINKS -->
 					<div class='floatingWidget' id='socialMediaWidget'>
@@ -445,8 +469,8 @@ URL:      www.bluedragonflypublishing.com
 								<img alt='Pinterest' class='sm-button' src='https://tanyamiranda.github.io/content/images/sm_pinterest-pink.png'/></a>
 						</div>
 						<div><br/></div>
-					</div>					
-					
+					</div>	
+
 					<!-- SIGN UP FOR BLOG POSTS-->
 					<div class='floatingWidget' id='signUpWidget'>
 						<div><br/></div>
@@ -520,4 +544,5 @@ URL:      www.bluedragonflypublishing.com
 	</div>
 
 </body>
+<script src="https://tanyamiranda.github.io/content/scripts/cookie.notice.js"></script>
 </html>
