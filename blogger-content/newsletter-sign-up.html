@@ -7,14 +7,10 @@
 <link href='https://tanyamiranda.github.io/content/styles/books.css' rel='stylesheet' type='text/css'/>
 <div id="newsletter-signup">
     <div id="signup-banner-section" class="book-banner-section">
+        <div id="signup-text-highlight"><span class="break-in-text">Family Secrets.</span><span class="break-in-text">Magic.</span><span class="break-in-text">Adventure.</span></div>
         <div id="signup-details">
-            <div id="signup-book-image"><img src="https://tanyamiranda.github.io/content/images/books-TheBoxOfSouls.jpg"></a></div>
-            <div id="signup-thankyou-message" style="display: none;">
-                <div id="signup-text-highlight">Thank You!</div>
-                <div id="signup-text"><p>Thank you for signing up! Now check your email for a link to your FREE book.</p></div>
-            </div>
+            <div id="signup-book-image"><img src="https://tanyamiranda.github.io/content/images/books-3d-theboxofsouls.jpg"></a></div>
             <div id="signup-message">
-                <div id="signup-text-highlight"><span class="break-in-text">Family Secrets.</span><span class="break-in-text">Magic.</span><span class="break-in-text">Adventure.</span></div>
                 <div id="signup-text"><p>Enter your email to get your FREE copy of <span class="break-in-text">The Box Of Souls.</span></p></div>
                 <div id="signup-form">
                     <div>    
@@ -45,7 +41,7 @@
                                         </div>
                                     </div>
                                     <div id="mce-responses">
-                                        <div for="mce-EMAIL" class="mce_inline_error" style="display: block;">&nbsp;</div>
+                                        <div for="mce-EMAIL" class="mce_inline_error" style="display:none;">&nbsp;</div>
                                         <div class="response" id="mce-EMAIL-HELPERTEXT" style="display:none" ></div>
                                         <div class="response" id="mce-error-response" style="display:none"></div>
                                         <div class="response" id="mce-success-response" style="display:none"></div>
@@ -88,7 +84,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;
-        max-width: 800px;
+        max-width: 700px;
     }
 
     #signup-form {
@@ -104,16 +100,15 @@
     #signup-book-image img{
         width: 100%;
         height: auto;
-        box-shadow: 0 8px 20px rgb(0 0 0 / 40%);
+       /* box-shadow: 0 8px 20px rgb(0 0 0 / 40%); */
     }
 
-    #signup-message, #signup-thankyou-message {
+    #signup-message {
         width: 60%;
         text-align: center;
     }
 
     #signup-text {
-        padding: 0 40px;
         line-height: 1.6;
         font-size: 14pt;
         font-family: "Open sans";
@@ -130,27 +125,33 @@
         font-family: "Dancing Script";
         font-size: 24pt;
         color: purple;
+        padding: 20px;
     }
 
     #signup-button{
         text-align: center;
     }
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 650px) {
+
+        #signup-text {
+            padding: 0 20px;
+        }
 
         #signup-details {
             display: inline-block;
         }
 
-        #signup-book-image, #signup-message, #signup-thankyou-message {
+        #signup-book-image, #signup-message {
             width: 100%;
-            padding: 10px 0 25px 0;
         }
 
         #signup-book-image img {
-            width: 40%;
+            width: 100%;
+            max-width: 150px;
         }
     }
-
+</style>
+<style>
     /* 
     ******************************************* 
      BELOW ARE MAILCHIMP CLASS OVERRIDES     
@@ -173,9 +174,6 @@
 
     .mc-field-group {
         width: 100% !important;
-    }
-    .mc-field-group input{
-        height: 45px !important;
     }
 
     #mc_embed_signup{
@@ -217,7 +215,7 @@
     ******************************************* 
     */
 
-    #header-menu {
+    #header-menu, #header-menu-icon {
         display: none;
     }
 
@@ -239,10 +237,8 @@
     var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
             if (target.style.display == "block") {
-                var signupMessage = document.getElementById('signup-message');
-                var thankyouMessage = document.getElementById('signup-thankyou-message');
-                signupMessage.style.display="none";
-                thankyouMessage.style.display="block";
+                target.style.display ="none";
+                window.location.href = "https://www.tanyamiranda.com/p/welcome-aboard.html";
             }
         });
     });
