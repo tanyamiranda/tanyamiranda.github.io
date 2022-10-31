@@ -42,7 +42,7 @@ const BOOK_META_DATA = [
         image:"/images/books-TheBoxOfSouls.jpg",
         tagline: "Even the darkest magic can't break the bonds of family.",
         shortblurb: "Although she was overlooked to inherit her grandmother's magic, Jasmyn learns she has powers of her own. Resentment and envy are a dangerous pair, but when doused with magic, the chaos it creates is unimaginable.",
-        fullblurb: "18-year-old Jasmyn secretly resents her family's preference for her 8-year-old sister Katarina. Her jealousy grows when her grandmother, a dying witch, overlooks Jasmyn and chooses Katarina to inherit her magic powers. Although being second-place to her sister is something Jasmyn has grown accustomed to, this rejection wounds her like no other.<br/><br/>Little does Jasmyn know, she too has inherited some of her grandmother's powers. Resentment and envy are a dangerous pair, but when doused with magic, the chaos it creates is unimaginable.",
+        fullblurb: "18-year-old Jasmyn secretly resents her family's preference for her 8-year-old sister Katarina. Her jealousy grows when her grandmother, a dying witch, overlooks Jasmyn and chooses Katarina to inherit her magic powers. Although being second to her sister is something Jasmyn has grown accustomed to, this rejection wounds her like no other.<br/><br/>Little does Jasmyn know she, too, has inherited some of her grandmother's powers. Resentment and envy are a dangerous pair, but when doused with magic, the chaos it creates is unimaginable.",
         shoplink: "https://bookstore.tanyamiranda.com/b/vmnYi",
         amazon: "http://www.amzn.to/2LF5soj",
         nook: "http://www.bit.ly/2y5MZPO",
