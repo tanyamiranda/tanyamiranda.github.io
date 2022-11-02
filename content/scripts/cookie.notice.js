@@ -17,7 +17,7 @@
      * @type object
      */
     var defaults = {
-        'message': 'This site uses cookies from Google to deliver its services, to personalise ads and to analyse traffic. Information about your use of this site is shared with Google. By using this site, you agree to its use of cookies.',
+        'message': 'This site uses cookies from Google to deliver its services, to personalize ads and to analyze traffic. Information about your use of this site is shared with Google. By using this site, you agree to its use of cookies.',
        
         'cookieNoticePosition': 'bottom',
 
