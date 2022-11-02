@@ -17,35 +17,17 @@
      * @type object
      */
     var defaults = {
-        'messageLocales': {
-            'it': 'Utilizziamo i cookie per essere sicuri che tu possa avere la migliore esperienza sul nostro sito. Se continui ad utilizzare questo sito assumiamo che tu ne sia felice.',
-            'en': 'We use cookies to make sure you can have the best experience on our website. If you continue to use this site we assume that you will be happy with it.',
-            'de': 'Wir verwenden Cookies um sicherzustellen dass Sie das beste Erlebnis auf unserer Website haben.',
-            'oc': 'Utilizam de cookies per vos provesir la melhora experiéncia possibla sus nòstre site web. Se contunhatz d\'utilizar aqueste site web considerarem que sètz d\'acòrdi amb aquò.',
-            'fr': 'Nous utilisons des cookies afin d\'être sûr que vous pouvez avoir la meilleure expérience sur notre site. Si vous continuez à utiliser ce site, nous supposons que vous acceptez.',
-            'hu': 'Sütiket használunk a honlapunkkon a legjobb felhasználói élmény érdekében. Ha tovább használja a weblapot, akkor úgy vesszük, hogy egyetért.'
-        },
-
+        'message': 'This site uses cookies from Google to deliver its services, to personalise ads and to analyse traffic. Information about your use of this site is shared with Google. By using this site, you agree to its use of cookies.',
+       
         'cookieNoticePosition': 'bottom',
 
-        'learnMoreLinkEnabled': false,
+        'learnMoreLinkEnabled': true,
 
-        'learnMoreLinkHref': '/cookie-banner-information.html',
+        'learnMoreLinkHref': 'https://policies.google.com/privacy',
 
-        'learnMoreLinkText': {
-            'it': 'Saperne di più',
-            'en': 'Learn more',
-            'de': 'Mehr erfahren',
-            'oc': 'Ne saber mai',
-            'fr': 'En savoir plus',
-            'hu': 'Tudjon meg többet',
-        },
+        'learnMoreLinkText': 'Learn more',
 
-        'buttonLocales': {
-            'en': 'Ok',
-            'oc': 'D\'acòrdi',
-            'hu': 'Oké'
-        },
+        'buttonText': 'Ok',
 
         'expiresIn': 30,
         'buttonBgColor': '#d35400',
@@ -87,7 +69,11 @@
         var params = extendDefaults(defaults, arguments[0] || {});
 
         // Get current locale for notice text
-        var noticeText = getStringForCurrentLocale(params.messageLocales);
+        var noticeText = params.message;
+
+        // Create bottom bar containing notice.
+        var noticeWrapper = createNoticeWrapper('black','bottom');
+        document.body.appendChild(noticeWrapper);
 
         // Create notice
         var notice = createNotice(noticeText, params.noticeBgColor, params.noticeTextColor, params.cookieNoticePosition);
@@ -95,13 +81,13 @@
         var learnMoreLink;
 
         if (params.learnMoreLinkEnabled) {
-            var learnMoreLinkText = getStringForCurrentLocale(params.learnMoreLinkText);
+            var learnMoreLinkText = params.learnMoreLinkText;
 
             learnMoreLink = createLearnMoreLink(learnMoreLinkText, params.learnMoreLinkHref, params.linkColor);
         }
 
         // Get current locale for button text
-        var buttonText = getStringForCurrentLocale(params.buttonLocales);
+        var buttonText = params.buttonText;
 
         // Create dismiss button
         var dismissButton = createDismissButton(buttonText, params.buttonBgColor, params.buttonTextColor);
@@ -110,11 +96,11 @@
         dismissButton.addEventListener('click', function (e) {
             e.preventDefault();
             setDismissNoticeCookie(parseInt(params.expiresIn + "", 10) * 60 * 1000 * 60 * 24);
-            fadeElementOut(notice);
+            fadeElementOut(noticeWrapper);
         });
 
-        // Append notice to the DOM
-        var noticeDomElement = document.body.appendChild(notice);
+        
+        var noticeDomElement = noticeWrapper.appendChild(notice);
 
         if (!!learnMoreLink) {
             noticeDomElement.appendChild(learnMoreLink);
@@ -122,31 +108,17 @@
 
         noticeDomElement.appendChild(dismissButton);
 
+        fadeElementIn(noticeWrapper);
+    
     };
-
-    /**
-     * Get the string for the current locale
-     * and fallback to "en" if none provided
-     * @param locales
-     * @returns {*}
-     */
-    function getStringForCurrentLocale(locales) {
-        var locale = (
-            document.documentElement.lang ||
-            navigator.language||
-            navigator.userLanguage
-        ).substr(0, 2);
-
-        return (locales[locale]) ? locales[locale] : locales['en'];
-    }
 
     /**
      * Test if cookies are enabled
      * @returns {boolean}
      */
     function testCookie() {
-        document.cookie = 'testCookie=1';
-        return document.cookie.indexOf('testCookie') != -1;
+        document.cookie = 'cookieConsent=1';
+        return document.cookie.indexOf('cookieConsent') != -1;
     }
 
     /**
@@ -157,6 +129,31 @@
         return document.cookie.indexOf('cookie_notice') != -1;
     }
 
+    function createNoticeWrapper(bgColor, position) {
+        
+        var noticeWrapper = document.createElement('div'),
+        noticeWrapperStyle = noticeWrapper.style;
+
+        noticeWrapper.setAttribute('id', 'cookieNoticeWrapper');
+
+        noticeWrapperStyle.position = 'fixed';
+
+        if (position === 'top') {
+            noticeWrapperStyle.top = '0';
+        } else {
+            noticeWrapperStyle.bottom = '0';
+        }
+
+        noticeWrapperStyle.left = '0';
+        noticeWrapperStyle.right = '0';
+        noticeWrapperStyle.background = bgColor;
+        noticeWrapperStyle["z-index"] = '999';
+        noticeWrapperStyle.width = "100%";
+        noticeWrapperStyle.opacity = "0";
+        return noticeWrapper;
+    }
+
+
     /**
      * Create notice
      * @param message
@@ -166,32 +163,21 @@
      * @returns {HTMLElement}
      */
     function createNotice(message, bgColor, textColor, position) {
-
+        
         var notice = document.createElement('div'),
             noticeStyle = notice.style;
 
         notice.innerHTML = message + '&nbsp;';
         notice.setAttribute('id', 'cookieNotice');
-
-        noticeStyle.position = 'fixed';
-
-        if (position === 'top') {
-            noticeStyle.top = '0';
-        } else {
-            noticeStyle.bottom = '0';
-        }
-
-        noticeStyle.left = '0';
-        noticeStyle.right = '0';
         noticeStyle.background = bgColor;
         noticeStyle.color = textColor;
-        noticeStyle["z-index"] = '999';
-        noticeStyle.padding = '10px 5px';
+        noticeStyle.padding = '20px';
         noticeStyle["text-align"] = 'center';
         noticeStyle["font-size"] = "12px";
         noticeStyle["line-height"] = "28px";
         noticeStyle.fontFamily = 'Helvetica neue, Helvetica, sans-serif';
-
+        noticeStyle.margin = "auto";
+        noticeStyle["max-width"] = "600px";
         return notice;
     }
 
@@ -217,9 +203,11 @@
         dismissButtonStyle.background = buttonColor;
         dismissButtonStyle.color = buttonTextColor;
         dismissButtonStyle['text-decoration'] = 'none';
-        dismissButtonStyle.display = 'inline-block';
+        dismissButtonStyle.display = 'block';
         dismissButtonStyle.padding = '0 15px';
-        dismissButtonStyle.margin = '0 0 0 10px';
+        dismissButtonStyle.margin = 'auto';
+        dismissButtonStyle.width = '30px';
+        dismissButtonStyle["margin-top"] = '10px';
 
         return dismissButton;
 
@@ -273,6 +261,19 @@
         (function fade() {
             (element.style.opacity -= .1) < 0.01 ? element.parentNode.removeChild(element) : setTimeout(fade, 40)
         })();
+    }
+
+    function fadeElementIn(element) {
+        var op = 0.1;  // initial opacity
+        element.style.display = 'block';
+        var timer = setInterval(function () {
+            if (op >= 1){
+                clearInterval(timer);
+            }
+            element.style.opacity = op;
+            element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op += op * 0.1;
+        }, 10);
     }
 
     /**
