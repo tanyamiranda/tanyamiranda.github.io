@@ -27,8 +27,10 @@ BOOK PAGES
     text-align: right;
 }
 
-.book-list-container {
+#book-list-container {
     padding-bottom: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .book {
