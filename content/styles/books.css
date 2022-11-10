@@ -52,6 +52,10 @@ BOOK PAGES
     box-shadow: 0 8px 20px rgb(0 0 0 / 40%);
 }
 
+.book-image-noshadow img{
+    box-shadow: unset;
+}
+
 .book-details-title {
     font-size: 24pt;
 }
