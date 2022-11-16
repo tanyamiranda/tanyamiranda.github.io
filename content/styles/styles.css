@@ -262,6 +262,18 @@ a:active  { color:#8a0886; text-decoration:none; }
     padding: 15px;
 }
 
+.page-highlight-header-text {
+    margin: auto;
+    display: block;
+    font-family: "Dancing Script";
+    font-size: 24pt;
+    text-align: center;
+    padding: 20px 0;
+    width: 90%;
+    color: purple;
+}
+
+
 /* 
 ***********************
 Adjust middle sections for tablets
@@ -334,6 +346,10 @@ On small screens:
     }
 
     .personal-message {
+        font-size: 18pt;
+    }
+
+    .page-highlight-header-text {
         font-size: 18pt;
     }
 
