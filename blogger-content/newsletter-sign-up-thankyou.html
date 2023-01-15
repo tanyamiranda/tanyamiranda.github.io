@@ -1,25 +1,26 @@
 <head>
-	<meta charset='UTF-8'/>
-	<meta content='width=device-width, initial-scale=1' name='viewport'/>
-	<meta content='text/html; charset=UTF-8' name='Content-Type'/>
+	<meta charset="UTF-8"></meta>
+	<meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+	<meta content="text/html; charset=UTF-8" name="Content-Type"></meta>
 </head>
-<link href='https://tanyamiranda.github.io/content/fonts/fonts.css' rel='stylesheet' type='text/css'/>
-<link href='https://tanyamiranda.github.io/content/styles/books.css' rel='stylesheet' type='text/css'/>
+<link href="https://tanyamiranda.github.io/content/fonts/fonts.css" rel="stylesheet" type="text/css"></link>
+<link href="https://tanyamiranda.github.io/content/styles/books.css" rel="stylesheet" type="text/css"></link>
 <div id="newsletter-signup">
-    <div id="signup-banner-section" class="book-banner-section">
+    <div class="book-banner-section" id="signup-banner-section">
         <div id="signup-text-highlight">Welcome Aboard!</div>
         <div id="signup-text-emphasis"><p>Your email has been added to my Reader's Group and a link to your free copy of The Box of Souls will be emailed to you shortly.</p></div>        
         <div id="signup-details">
-            <div id="signup-book-image"><a href='https://www.amazon.com/dp/B07DYB2YYB' target='_blank'><img src="https://tanyamiranda.github.io/content/images/FamilyRelicsSet.jpg"></a></div>
-            <div id="signup-thankyou-message" >
-                <div id="signup-text"><p>Now that you've signed up, you can get the entire Family Relics Trilogy at a discount! Simply go to Amazon and purchase the rest of the trilogy.</p></div>
-                <div id="signup-text"><strong>Complete Set Price:</strong> $13.97<br/><strong>Signup Price:</strong> $9.98<br/><strong>Savings:</strong> 28%</div>
+            <div id="signup-book-image"><a href="https://amzn.to/3UoY4Bl" target="_blank"><img src="https://tanyamiranda.github.io/content/images/FamilyRelicsSet.jpg" /></a></div>
+            <div id="signup-thankyou-message">
+                <div id="signup-text"><p>Now that you've signed up, you can get the entire Family Relics Trilogy at a discount!</p></div>
+                <div id="signup-text"><strong>Complete Set Price:</strong> $14.97<br /><strong>Signup Price:</strong> $9.98<br /><strong>Savings:</strong> 33%</div>
+              <div id="signup-text"><br/><strong>FREE with KindleUnlimited!</strong></div>
+              <div id="signup-text"><br/>Ready to dowload the rest of the trilogy?</div>
                 <div id="promo-buttons">
-                    <div id="button-amazon" class='myStoreButton'><a href='https://www.amazon.com/dp/B07DYB2YYB' target='_blank'>Yes! Take me to Amazon</a></div>
+                    <div class="myStoreButton" id="button-amazon"><a href="https://amzn.to/3UoY4Bl" target="_blank">Yes! Take me to Amazon</a></div>
                 </div>
             </div>
         </div>
-        
     </div>
 </div>
 
@@ -39,7 +40,7 @@
     }
 
     #signup-banner-section {
-        max-width: 800px;
+        max-width: 900px;
         margin: auto;
     }
 
@@ -48,7 +49,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;
-        max-width: 800px;
+        max-width: 900px;
     }
 
     #signup-form {
@@ -64,11 +65,14 @@
     #signup-book-image img{
         width: 100%;
         height: auto;
+      	max-width: 300px;
     }
 
     #signup-message, #signup-thankyou-message {
-        width: 60%;
+        width: 55%;
+        max-width: 400px;
         text-align: center;
+      	padding: 20px;
     }
 
     #signup-text {
@@ -116,21 +120,22 @@
 
     @media screen and (max-width: 650px) {
 
-        #newsletter-signup {
+      	#newsletter-signup {
           padding-bottom:25px;
       	}
-        
+      
         #signup-details {
             display: inline-block;
         }
 
         #signup-book-image, #signup-message, #signup-thankyou-message {
             width: 100%;
+          	padding: 0;
         }
 
         #signup-book-image img {
             width: 100%;
-            max-width: 150px;
+            max-width: 200px;
         }
     }
 </style>
