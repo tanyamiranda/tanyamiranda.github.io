@@ -30,7 +30,7 @@
         'buttonText': 'Ok',
 
         'expiresIn': 30,
-        'buttonBgColor': '#d35400',
+        'buttonBgColor': 'green',
         'buttonTextColor': '#fff',
         'noticeBgColor': '#000',
         'noticeTextColor': '#fff',

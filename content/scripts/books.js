@@ -241,7 +241,7 @@ function loadBookThumbnails(small) {
     BOOK_META_DATA.forEach(book => {
         if (!book.hideFromBookList) 
             html += "<div class='book-thumbnail" + (small ? " smallest-thumbnail" : "") + "'>" + 
-                    "<a href='" + bookdetailsurl + "?bookId=" + book.id + "' ><img src='" + contentlocation + book.image + "' /></a>" + 
+                    "<a href='" + bookdetailsurl + "?bookId=" + book.id + "' ><img src='" + contentlocation + book.image + "' alt='" + book.title + "'/></a>" + 
                 "</div>"
     });
 
