@@ -183,7 +183,7 @@ body{
     width: 100%;
 }
 
-#alberto-photos img {
+.alberto-photos img {
     width: 300px;
     height: auto;
     margin: auto;
@@ -256,7 +256,7 @@ body{
         width: 80%;
     }
 
-    #alberto-photos img {
+    .alberto-photos img {
         width: 80%;
     }
     
