@@ -42,8 +42,6 @@ function displaySection(sectionName) {
         sectionTag = sectionName;
 
     sectionTag = sectionTag + "-section";
-    console.log("sectionName=" + sectionName);
-    console.log("sectionTag=" + sectionTag);
 
     var contentSections=document.getElementsByClassName("content-section");
     var menuItems=document.getElementsByClassName("menu-items");
