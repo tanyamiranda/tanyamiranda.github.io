@@ -172,7 +172,7 @@ body{
     padding: 0 20px;
 }
 
-#alberto-photos {
+.alberto-photos {
     padding: 20px 0;;
     display: flex;
     flex-wrap: wrap;
