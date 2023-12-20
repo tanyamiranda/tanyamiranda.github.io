@@ -1,3 +1,5 @@
+var pageLoaded = false;
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -7,25 +9,18 @@ function myFunction() {
     }
 }
 
-function menuSelect(selectedItem) {
-    myFunction();
+function toggleMenu() {
 
-    var contentSections=document.getElementsByClassName("content-section");
-    var menuItems=document.getElementsByClassName("menu-items");
+    if (!pageLoaded)
+        return;
 
-    for(var x=0; x < contentSections.length; x++) {
-        
-        if(x==selectedItem) {
-            contentSections[x].style.display = "inline-block";
-            menuItems[x].style.color = "yellow";
-        }
-        else {
-            contentSections[x].style.display = "none";
-            menuItems[x].style.color = "white";
-        }
+    var menuIcon = document.getElementById("myTopnav");
+    if (menuIcon.className === "topnav") {
+        menuIcon.className += " responsive";
+    } else {
+        menuIcon.className = "topnav";
     }
 }
-
 
 function displaySection(sectionName) {
 
@@ -69,7 +64,10 @@ externally, pre-load section
 const hash = window.location.hash;
 displaySection(hash.substring(1));
 
+pageLoaded = true;
+
 window.onpopstate = function() {
 	const hash = window.location.hash;
 	displaySection(hash.substring(1));
+    toggleMenu();
 }
