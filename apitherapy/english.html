@@ -13,25 +13,24 @@
 ]]></b:skin>
 
 <head>
-	<title>New Jersey Apitherapy</title>
-  	<link href='images/favicon.ico' rel='icon' type='image/x-icon'/>
+	<title>Honeybees, Herbs, and Healing</title>
+  	<link href='https://tanyamiranda.github.io/apitherapy/images/favicon.ico' rel='icon' type='image/x-icon'/>
 
 	<meta content='width=device-width, initial-scale=1' name='viewport'/>
   	<meta content='text/html; charset=UTF-8' name='Content-Type'/>
   	<meta content='New Jersey, Apitherapy, Apitherapist, Herbalist, Traditional Chinese Medicine, Western and Ayurvedic Herbal Consultant' name='description'/>
-  	<meta content='e-book, ebook, print, formatting, websites, design, logos, print format, blue dragonfly publishing, indie publishing, multimedia design' name='keywords'/>
+  	<meta content='apitherapy, herbology, apitherapist, herbalist, alternative remedies, home remedies, natural medicine' name='keywords'/>
 
 	<!-- Begin Open Graph & Twitter metadata -->
-	<meta content='New Jersey Apitherapy' property='og:title'/>
+	<meta content='Honeybees, Herbs, and Healing' property='og:title'/>
 	<meta content='website' property='og:type'/>
-	<meta content='images/logo.webp' property='og:image'/>
-	<meta content='images/logo.webp' name='twitter:image'/>
+	<meta content='https://tanyamiranda.github.io/apitherapy/images/logo.webp' property='og:image'/>
+	<meta content='https://tanyamiranda.github.io/apitherapy/images/logo.webp' name='twitter:image'/>
 	<meta content='en_US' property='og:locale'/>
-	<meta content='http://www.njapitherapy.com/' property='og:url'/>
+	<meta content='http://www.honeybeesandherbs.com/' property='og:url'/>
 	<meta content='summary_large_image' name='twitter:card'/>
 
-	<link crossorigin='anonymous' rel='stylesheet' id='all-css-2-1' href='style.css' type='text/css' media='all' />
-	<script crossorigin='anonymous' type='text/javascript' src='script.js'></script>
+	<link href='https://tanyamiranda.github.io/apitherapy/style.css' crossorigin='anonymous' rel='stylesheet' type='text/css' media='all' />
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'/>
 </head>
 
@@ -43,7 +42,7 @@
 
 		<div id='row-header'>
 			<div>
-				<a href='/'><img id='row-header-image' src='images/logo.webp' width="90px"/></a>
+				<a href='/'><img id='row-header-image' src='https://tanyamiranda.github.io/apitherapy/images/logo.webp' width="90px"/></a>
 				<div id='row-header-title'>Honeybees, Herbs and Healing</div>
 				<div id='row-header-tagline'>Find you own health in God's natural miracle.</div>
 			</div>
@@ -51,12 +50,12 @@
 			<div id='headerMenu'>
 				<!-- Highlight the menu item etc. -->
 				<div class='topnav' id='myTopnav'>
-					<a class='icon' href='javascript:void(0);' onclick='myFunction()'>&#9776;</a>
-					<a class='menu-items' href='javascript:menuSelect(0)' id='menu-item-whatisapitherapy' style='color: yellow;'>Welcome</a>
-					<a class='menu-items' href='javascript:menuSelect(1)' id='menu-item-whatisapitherapy' >Apitherapy</a>
-					<a class='menu-items' href='javascript:menuSelect(2)' id='menu-item-productsandservices' >Products &amp; Services</a>
-					<a class='menu-items' href='javascript:menuSelect(3)' id='menu-item-aboutme' >About Me</a>
-					<a class='menu-items' href='spanish.html' id='menu-item-inspanish' >En Español</a>
+					<a class='icon' href='javascript:void(0);' onclick='toggleMenu()'>&#9776;</a>
+					<a class='menu-items' href="#welcome" onclick="displaySection('welcome')" style='color: yellow;'>Welcome</a>
+					<a class='menu-items' href="#apitherapy" onclick="displaySection('apitherapy')" >Apitherapy</a>
+					<a class='menu-items' href="#products-and-services" onclick="displaySection('products-and-services')" >Products &amp; Services</a>
+					<a class='menu-items' href="#about-me" onclick="displaySection('about-me')" >About Me</a>
+					<a class='menu-items' href='https://www.abejasyhierbas.com' >En Español</a>
 				</div>
 			</div>
 
@@ -66,7 +65,7 @@
 
 			<div id='row-middle-content'>
 			
-				<div class='content-section' id='welcome'>
+				<div class='content-section' id='welcome-section'>
 
 					<div class='content-section-title'>Welcome!</div>
 					<p>
@@ -76,17 +75,17 @@
 							I believe that God gave us bees and herbs for a reason and that we should not waste these precious gifts. 
 							I have dedicated my life to the practice of apitherapy and natural medicine, and I wish to share it all with you.</p>
 					</p>
-					<p id="alberto-photos">
-						<img src="images/alberto-behive.jpg">
-						<img src="images/alberto-with-books.jpg">
-					</p>
+					<div class="alberto-photos">
+						<img src="https://tanyamiranda.github.io/apitherapy/images/alberto-behive.jpg"/>
+						<img src="https://tanyamiranda.github.io/apitherapy/images/alberto-with-books.jpg"/>
+					</div>
 					<p>Read all about the products and services I offer, visit my online store, check out my books at your favorite bookstore, 
 						visit my YouTube channel, or connect with me on facebook or email.</p>
 					<p>Contact me and start feeling better today!</p>
 							
 				</div>
 
-				<div class='content-section' id='apitherapy' style='display:none;'>
+				<div class='content-section' id='apitherapy-section' style='display:none;'>
 					<div class='content-section-title'>What is Apitherapy?</div>
 					<p>Apitherapy is the art and science of making therapeutic use of products of the honeybee hive, including honey, pollen, propolis, royal jelly, bee bread, bee wax and bee venom. Bee stings, or bee venom therapy (BVT), is the use of live bee stings or bee venom injections to help people suffering from a variety of ailments. I personally use live bees only.</p>
 					<p>Note: Apitherapy is not approved by the US Food and Drug Administration, or any other regulatory agency in the USA.</p>
@@ -105,7 +104,7 @@
 					<br/>
 				</div>
 
-				<div class='content-section' id='products-and-services' style='display:none;'>
+				<div class='content-section' id='products-and-services-section' style='display:none;'>
 					
 					<div class='content-section-title'>Products and Services</div>
 
@@ -114,51 +113,7 @@
 
 					<div id="product-list">
 						<div class="product-offer">
-							<div class="offer-image"><img src="images/ps-honey.jpg"/></div>
-							<div class="offer-details">
-								<div class="offer-title">Hive Products</div>
-								<div class="offer-text">
-									<p>Harvested from hives in New Jersey.</p>
-									<ul>
-										<li>100% Pure Honey</li>
-										<li>Honey with honeycomb</li>
-										<li>Honeycomb alone</li>
-										<li>Pollen granules</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="product-offer">
-							<div class="offer-image"><img src="images/ps-apitherapy.jpg"/></div>
-							<div class="offer-details">
-								<div class="offer-title">Apitherapy</div>
-								<div class="offer-text">
-									<p>Uso abejas y productos de la colmena para tratar varias imbalances.</p>
-									<ul>
-										<li>Bee Venom Treament</li>
-										<li>Ear Cone Candling</li>
-										<li>Honey-based formulas</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="product-offer">
-							<div class="offer-image"><img src="images/ps-teas.jpg"/></div>
-							<div class="offer-details">
-								<div class="offer-title">Herbal Teas</div>
-								<div class="offer-text">
-									<p>Herbal Teas in packs of 20 tea bags.</p>
-									<ul>
-										<li>Green Tea</li>
-										<li>Oolong Tea</li>
-										<li>Yerba Mate</li>
-										<li>Yerba Buena</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="product-offer">
-							<div class="offer-image"><img src="images/ps-tintures.png"/></div>
+							<div class="offer-image"><img src="https://tanyamiranda.github.io/apitherapy/images/ps-tintures.png"/></div>
 							<div class="offer-details">
 								<div class="offer-title">Tintures</div>
 								<div class="offer-text">
@@ -173,7 +128,36 @@
 							</div>
 						</div>
 						<div class="product-offer">
-							<div class="offer-image"><img src="images/ps-supplements.jpg"/></div>
+							<div class="offer-image"><img src="https://tanyamiranda.github.io/apitherapy/images/ps-honey.jpg"/></div>
+							<div class="offer-details">
+								<div class="offer-title">Hive Products</div>
+								<div class="offer-text">
+									<p>Harvested from hives in New Jersey.</p>
+									<ul>
+										<li>100% Pure Honey</li>
+										<li>Honey with honeycomb</li>
+										<li>Honeycomb alone</li>
+										<li>Pollen granules</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product-offer">
+							<div class="offer-image"><img src="https://tanyamiranda.github.io/apitherapy/images/ps-apitherapy.jpg"/></div>
+							<div class="offer-details">
+								<div class="offer-title">Apitherapy</div>
+								<div class="offer-text">
+									<p>Uso abejas y productos de la colmena para tratar varias imbalances.</p>
+									<ul>
+										<li>Bee Venom Treament</li>
+										<li>Ear Cone Candling</li>
+										<li>Honey-based formulas</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product-offer">
+							<div class="offer-image"><img src="https://tanyamiranda.github.io/apitherapy/images/ps-supplements.jpg"/></div>
 							<div class="offer-details">
 								<div class="offer-title">Supplements</div>
 								<div class="offer-text">
@@ -186,9 +170,24 @@
 									</ul>
 								</div>
 							</div>
+						</div>
+						<div class="product-offer">
+							<div class="offer-image"><img src="https://tanyamiranda.github.io/apitherapy/images/ps-teas.jpg"/></div>
+							<div class="offer-details">
+								<div class="offer-title">Herbal Teas</div>
+								<div class="offer-text">
+									<p>Herbal Teas in packs of 20 tea bags.</p>
+									<ul>
+										<li>Green Tea</li>
+										<li>Oolong Tea</li>
+										<li>Yerba Mate</li>
+										<li>Yerba Buena</li>
+									</ul>
+								</div>
+							</div>
 						</div>				
 						<div class="product-offer">
-							<div class="offer-image"><img src="images/ps-consultation.jpg"/></div>
+							<div class="offer-image"><img src="https://tanyamiranda.github.io/apitherapy/images/ps-consultation.jpg"/></div>
 							<div class="offer-details">
 								<div class="offer-title">Health Consultation</div>
 								<div class="offer-text">
@@ -199,7 +198,7 @@
 					</div>
 				</div>
 
-				<div class='content-section' id='about-me' style='display:none;'>
+				<div class='content-section' id='about-me-section' style='display:none;'>
 					<div class='content-section-title'>About Me</div>
 					<p>
 						<p>My name is Alberto Martínez, I am passionate about apitherapy and natural healing. 
@@ -220,7 +219,8 @@
 						<li>General Well Being</li>
 						<li>And so much more...</li>
 					</ul>
-				
+					<p>I also offer individual analysis and frequently recommend beehive products, including raw honey, pollen, royal jelly, propolis, and many other patient-specific nutritional supplements.</p>
+					<p>If you are not feeling well, contact me and start feeling better today!</p>
 					<p><b>My Qualifications:</b></p>
 					<ul>
 						<li>Apitherapist: Passed the CAMC &#8220;Charles Mraz&#8221; test of the AAS</li>						
@@ -231,10 +231,10 @@
 						<li>Certified in Kinesiology – Touch for Health I-II</li>
 						<li>Certified in Reconective Healing I-II</li>
 					</ul>
-					<p id="alberto-photos">
-						<img src="images/alberto-behive.jpg">
-						<img src="images/alberto-with-books.jpg">
-					</p>
+					<div class="alberto-photos">
+						<img src="https://tanyamiranda.github.io/apitherapy/images/alberto-behive.jpg"/>
+						<img src="https://tanyamiranda.github.io/apitherapy/images/alberto-with-books.jpg"/>
+					</div>
 				</div>
 				<br/>
 			</div>
@@ -242,13 +242,13 @@
 
 		<div id='row-book-promo'>
 			<p class="book-promo-text">Get my book and start living a healthier life.</p>
-			<div id="book-promo-image"><img id='bookcovers' src='images/both-books.webp'/></a></div>
+			<div id="book-promo-image"><img id='bookcovers' src='https://tanyamiranda.github.io/apitherapy/images/both-books.webp'/></div>
 			<p class="book-promo-text">Available at all major booksellers, in English and Spanish.</p>
 			<div id="book-promo-links">
-				<div class="book-promo-link-seller"><a href="https://amzn.to/41pPXJ0" target="_blank" id="amazon"><img height="auto" src="images/store-amazon.png" width="80px"></a></div>
-				<div class="book-promo-link-seller"><a href="https://www.barnesandnoble.com/s/9798839670075+2940179173939+9798839659278+2940167117167?Ntx=mode+matchany&_requestid=566483" target="_blank" id="nook"><img height="auto" src="images/store-bn.png" width="80px"></a></div>
-				<div class="book-promo-link-seller"><a href="https://books.apple.com/us/author/alberto-martinez/id145022724" target="_blank" id="apple"><img height="auto" src="images/store-ibooks.png" width="80px"></a></div>
-				<div class="book-promo-link-seller"><a href="https://www.kobo.com/us/en/search?query=9798223967262+9798223820086" target="_blank" id="kobo"><img height="auto" src="images/store-kobo.png" width="80px"></a></div>
+				<div class="book-promo-link-seller"><a href="https://amzn.to/41pPXJ0" target="_blank" id="amazon"><img height="auto" src="https://tanyamiranda.github.io/apitherapy/images/store-amazon.png" width="80px"/></a></div>
+				<div class="book-promo-link-seller"><a href="https://www.barnesandnoble.com/s/9798839670075+2940179173939+9798839659278+2940167117167?Ntx=mode+matchany" target="_blank" id="nook"><img height="auto" src="https://tanyamiranda.github.io/apitherapy/images/store-bn.png" width="80px"/></a></div>
+				<div class="book-promo-link-seller"><a href="https://books.apple.com/us/author/alberto-martinez/id145022724" target="_blank" id="apple"><img height="auto" src="https://tanyamiranda.github.io/apitherapy/images/store-ibooks.png" width="80px"/></a></div>
+				<div class="book-promo-link-seller"><a href="https://www.kobo.com/us/en/search?query=9798223967262+9798223820086" target="_blank" id="kobo"><img height="auto" src="https://tanyamiranda.github.io/apitherapy/images/store-kobo.png" width="80px"/></a></div>
 			</div>
 			
 		</div>
@@ -262,8 +262,8 @@
 			<p><a class="footer-links" href="tel:+12013609677">201-360-9677</a></p>
 
 			<p><div class="sm-links">
-				<a href="https://www.facebook.com/albertomartinezherbalist" target="_blank"><img src="images/sm-facebook.png" /></a>
-				<a href="https://www.youtube.com/channel/UCOoR9IH_HgDLRZdjMPCdaJw" target="_blank"><img src="images/sm-youtube.png" /></a>
+				<a href="https://www.facebook.com/albertomartinezherbalist" target="_blank"><img src="https://tanyamiranda.github.io/apitherapy/images/sm-facebook.png" /></a>
+				<a href="https://www.youtube.com/channel/UCOoR9IH_HgDLRZdjMPCdaJw" target="_blank"><img src="https://tanyamiranda.github.io/apitherapy/images/sm-youtube.png" /></a>
 			</div></p>
 			
 			<p>** None of these statements have been approved by the Food and Drug Administration (FDA) or any other government agency in the United States.</p>
@@ -271,5 +271,5 @@
 	</div>
 
 </body>
-
+<script crossorigin='anonymous' type='text/javascript' src='https://tanyamiranda.github.io/apitherapy/script.js'></script>
 </html>
