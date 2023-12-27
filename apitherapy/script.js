@@ -25,7 +25,7 @@ function toggleMenu() {
 function displaySection(sectionName) {
 
 	const HOMEPAGETAG="welcome";
-	const ALLTAGS=["welcome","apitherapy", "products-and-services", "about-me"];
+	const ALLTAGS=["welcome","apitherapy", "products-and-services", "about-me", "my-book"];
 	
 	let sectionTag = "";
 	

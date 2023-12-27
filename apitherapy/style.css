@@ -112,6 +112,15 @@ body{
     font-size: 20px;
     padding: 10px 30px;
 }
+.book-image-layout {
+    text-align: center;
+    padding: 20px;
+}
+.book-image-layout img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
 #book-promo-image img {
     width: 100%;
     max-width: 300px;
