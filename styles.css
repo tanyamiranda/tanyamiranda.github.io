@@ -120,6 +120,7 @@ Specific button design defined by other classes
     overflow: hidden;
     border-radius: 10px;
     background-color: white;
+	vertical-align: top;
 }	
 
 .img-hover-zoom {
@@ -138,7 +139,8 @@ Specific button design defined by other classes
 	padding: 20px;
 	background-color: white;
     color: #404040;
-    min-height: 80px;
+	height: auto;
+    min-height: 125px;
 }
 
 .sm-button {
