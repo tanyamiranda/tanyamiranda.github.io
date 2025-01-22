@@ -162,6 +162,10 @@ a.no-style:visited {
 	padding-bottom: 50px;
 }
 
+.skills-list {
+	max-width: 1000px;
+    margin: auto;
+}
 
 .skills-button-list {
 	margin: auto;
