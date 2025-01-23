@@ -26,7 +26,7 @@ Specific button design defined by other classes
 
 .splash{
 	color:white;
-	background-image: url(images/bwmountains.jpg);
+	background-image: url(/images/bwmountains.jpg);
 	background-repeat:round;
 	background-attachment: scroll;
 	min-height: 400px;
@@ -96,7 +96,7 @@ Specific button design defined by other classes
 
 #quote {
 	width: 100%;
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/gears.jpg);	
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/images/gears.jpg);	
 	color:white;
 	min-height: 300px;
 	place-content: center center;
@@ -157,7 +157,7 @@ a.no-style:visited {
 }
 
 #tech-skills {
-	background-image: url(images/interlockinggrid.jpg);
+	background-image: url(/images/interlockinggrid.jpg);
 	background-size: cover;
 	padding-bottom: 50px;
 }
