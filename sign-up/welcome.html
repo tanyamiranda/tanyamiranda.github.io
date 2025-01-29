@@ -105,7 +105,7 @@
             </div>
             <div id="footer">
                 <div id="author-intro">From Urban Fantasy Author</div>
-                <div id="author-signature">Tanya Miranda</div>
+                <div id="author-signature" onclick="visitMe()"><img src="https://tanyamiranda.github.io/sign-up/images/name.jpg"></div>
             </div>
         </div>
     </body>
@@ -336,21 +336,18 @@ body {
     }
 }
 #footer {
-    font-size: 22px;
-    font-weight: normal;
-    padding-bottom: 75px;
-    padding-top: 40px;
+    padding: 40px 0;
     color: white;
     align-content: center;
     text-align: center;
 
-    #author-intro {
-        font-weight: 300;
-        padding-bottom: 10px;
+    div {
+        padding: 10px;
+        align-content: center;
+        text-align: center;
     }
-    #author-signature {
-        font-family: Cinzel Decorative;
-        font-size: 45px;
+    img {
+        width: 275px;
     }
 }
 
@@ -504,5 +501,9 @@ src="https://www.facebook.com/tr?id=1414174689312646&ev=PageView&noscript=1"
 <!-- ******************************************** -->
 <!-- End Facebook Pixel Code -->
 <!-- ******************************************** -->
-
+<script>
+    function visitMe() {
+        location.href="https://www.tanyamiranda.com/"
+    }
+</script>
 </html>

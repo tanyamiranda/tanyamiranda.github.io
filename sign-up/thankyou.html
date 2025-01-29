@@ -182,7 +182,7 @@
             
             <div id="footer">
                 <div id="author-intro">From Urban Fantasy Author</div>
-                <div id="author-signature">Tanya Miranda</div>
+                <div id="author-signature" onclick="visitMe()"><img src="https://tanyamiranda.github.io/sign-up/images/name.jpg"></div>
             </div>
         </div>
     </body>
@@ -277,7 +277,6 @@ body {
     text-align: center;
     justify-items: center;
     color: white;
-    height: unset;
 
     #offer-message {
         font-weight: 300;
@@ -285,6 +284,7 @@ body {
         padding: 20px 0;
         font-weight: bold;
         font-style: italic;
+        text-align: center;
     }
 
     #offer-blocks {
@@ -295,6 +295,7 @@ body {
     .book-and-prices {
         text-align: center;
         justify-items: center;
+        display: grid;
     }
 
     .sale-price {
@@ -319,6 +320,7 @@ body {
         font-size: 22px;
         padding: 20px 0;
         margin: 20px 1px;
+        justify-self: center;
     }
 
     #exclusive-offer-container {
@@ -330,6 +332,9 @@ body {
 }
 
 .final-offer-block {
+    text-align: center;
+    justify-items: center;
+    justify-self: center;
     background: white;
     color: black;
     padding: 20px 10px;
@@ -397,7 +402,7 @@ body {
     background-color: darkgreen;
     color: white;
     padding: 20px;
-    margin: 30px;
+    margin: 30px 0;
     width: 275px;
     border-radius: 20px;
     font-size: 24px;
@@ -442,12 +447,6 @@ body {
     color: white;
     height: unset;
 
-    .trilogy-message {
-        font-weight: 300;
-        font-size: 34px;
-        padding: 50px 0;
-    }
-
     #trilogy-section-container {
         width: 100%;
         padding: 60px 0;
@@ -461,7 +460,8 @@ body {
     line-height: 45px;
     width: 100%;
     max-width: 525px;
-
+    text-align: center;
+    justify-items: center;
 }
 
 #trilogy-book-set {
@@ -539,7 +539,7 @@ body {
     .book-info {
         text-align: left;
         padding-left: 30px;
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .book-title {
@@ -605,6 +605,7 @@ body {
     text-align: center;
     justify-items: center;
     width: 100%;
+    font-size: 18px;
     img {
         border-style: none;
         border-radius: 6px;
@@ -622,27 +623,26 @@ body {
         color: #353535;
     }
     .author-heading {
+        text-align: center;
+        justify-items: center;
         font-size: 34px;
         font-weight: bold;
         padding: 20px;
     }
 }
 #footer {
-    font-size: 22px;
-    font-weight: normal;
-    padding-bottom: 75px;
-    padding-top: 40px;
+    padding: 40px 0;
     color: white;
     align-content: center;
     text-align: center;
 
-    #author-intro {
-        font-weight: 300;
-        padding-bottom: 10px;
+    div {
+        padding: 10px;
+        align-content: center;
+        text-align: center;
     }
-    #author-signature {
-        font-family: Cinzel Decorative;
-        font-size: 45px;
+    img {
+        width: 275px;
     }
 }
 
@@ -683,10 +683,7 @@ body {
         width: 100px;
         height: auto;
     }
-    #trilogy-message {
-        font-size: 22px;
-        padding: 20px;
-    }
+   
     #book-links {
         font-size: 18px;
         width: 330px;
@@ -696,7 +693,6 @@ body {
         font-size: 22px;
         max-width: 275px;
         line-height: 35px;
-        
     }
     #readers-favorite {
         padding: 30px 0;
@@ -817,7 +813,6 @@ body {
             padding: 25px 0;
         }
         .book-description {
-            font-size: 14px;
             padding: 10px 0;
         }
         
@@ -874,6 +869,9 @@ src="https://www.facebook.com/tr?id=1414174689312646&ev=PageView&noscript=1"
 <script>
     function getExclusiveOffer() {
         location.href="https://shop.tanyamiranda.com/cart/44893317431522:1,44871239303394:1,44870910476514:1?discount=SIGNUP-BOOK1-FREE,SIGNUP-TRILOGY-DISCOUNT";
+    }
+    function visitMe() {
+        location.href="https://www.tanyamiranda.com/"
     }
 </script>
 
