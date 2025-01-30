@@ -17,7 +17,7 @@
                     <div id="welcome-title">Done!</div>
                     <div id="top-message">
                         <p>Check your inbox in a few minutes for your free download!</p>
-                        <p id="one-time-offer-message">In the meantime, check out an exclusive one-time offer below only for new subscribers like you!</p>
+                        <p id="one-time-offer-message">In the meantime, check out this exclusive one-time offer below only for new subscribers like you!</p>
                     </div>
                     <div id="green-arrow">
                         <img src="https://tanyamiranda.github.io/sign-up/images/down-green-arrow.png" />
@@ -65,7 +65,7 @@
             <div class="major-section claim-offer-section">
                 <div class="inner-section-wrapper">
                     <div class="inner-section-title claim-top-message">Click the button below to claim your one-time offer!</div>
-                    <div><button class="claim-your-offer-button" onclick="getExclusiveOffer()">Claim Your Offer!</button></div>
+                    <div class="claim-your-offer-button"><button onclick="getExclusiveOffer()">Claim Your Offer!</button></div>
                     <div><img class="guarantee" src="https://tanyamiranda.github.io/sign-up/images/guarantee.png" /></div>
                     <div class="disclaimer">**This offer expires once you leave this page.</div>
                 </div>
@@ -107,7 +107,7 @@
                             <div class="final-offer-price-overlay" >$7.98</div>
                         </div>
                     </div>
-                    <div><button class="claim-your-offer-button" onclick="getExclusiveOffer()">Claim Your Offer!</button></div>
+                    <div class="claim-your-offer-button"><button onclick="getExclusiveOffer()">Claim Your Offer!</button></div>
                 </div>
             </div>
             <div id="altogether-section" class="major-section">
@@ -155,7 +155,7 @@
             </div>
             <div class="major-section claim-offer-section">
                 <div class="inner-section-wrapper">
-                    <div><button class="claim-your-offer-button" onclick="getExclusiveOffer()">Claim Your Offer!</button></div>
+                    <div class="claim-your-offer-button"><button onclick="getExclusiveOffer()">Claim Your Offer!</button></div>
                     <div class="disclaimer">**This offer expires once you leave this page.</div>
                 </div>
             </div>
@@ -266,7 +266,6 @@ body {
         padding: 10px;
     }
 }
-
 
 #exclusive-offer-section {
     font-size: 32px;
@@ -386,7 +385,11 @@ body {
         font-weight: bold;
         font-style: italic;
     }
+
     .claim-your-offer-button {
+        text-align: center;
+    }
+    .claim-your-offer-button button{
         background-color: darkgreen;
         color: white;
         padding: 20px;
@@ -400,7 +403,7 @@ body {
         border: 1px solid darkgreen;
     }
 
-    .claim-your-offer-button:hover {
+    .claim-your-offer-button button:hover {
         background-color: green;
     }
 }
@@ -447,7 +450,7 @@ body {
 }
 
 #altogether-section {
-    background-color: #1e1656;
+    background-color: #000f34;
     text-align: center;
     justify-items: center;
 
@@ -621,9 +624,10 @@ body {
             background: black;
             color: white;
             border-radius: 15px;
-            padding: 20px;
-            margin-top: 30px;
+            padding: 25px;
+            margin-top: 20px;
             border: 1px silver solid;
+            width: 150px;
         }
     }
     
@@ -736,6 +740,7 @@ body {
             
         }
     }
+
     #author-profile {
         padding: 20px 0;
         .author-heading {
