@@ -15,10 +15,8 @@
             <div id="top-section" class="major-section">
                 <div id="top-section-wrapper" class="inner-section-wrapper">
                     <div id="welcome-title">Done!</div>
-                    <div id="top-message">
-                        <p>Check your inbox in a few minutes for your free download!</p>
-                        <p id="one-time-offer-message">In the meantime, check out this exclusive one-time offer below only for new subscribers like you!</p>
-                    </div>
+                    <div id="top-message"><p>Check your inbox in a few minutes for your free download!</p></div>
+                    <div id="one-time-offer-message"><p>In the meantime, check out this exclusive offer only for new subscribers like you!</p></div>
                     <div id="green-arrow">
                         <img src="https://tanyamiranda.github.io/sign-up/images/down-green-arrow.png" />
                     </div>
@@ -64,7 +62,7 @@
             </div>
             <div class="major-section claim-offer-section">
                 <div class="inner-section-wrapper">
-                    <div class="inner-section-title claim-top-message">Click the button below to claim your one-time offer!</div>
+                    <div class="inner-section-title claim-top-message"><p>Click the button below to claim your one-time offer!</p></div>
                     <div class="claim-your-offer-button"><button onclick="getExclusiveOffer()">Claim Your Offer!</button></div>
                     <div><img class="guarantee" src="https://tanyamiranda.github.io/sign-up/images/guarantee.png" /></div>
                     <div class="disclaimer">**This offer expires once you leave this page.</div>
@@ -100,7 +98,7 @@
             </div>
             <div class="major-section claim-offer-section">
                 <div class="inner-section-wrapper">
-                    <div class="inner-section-title claim-top-message">One-Time Price for all 3 eBooks:</div>
+                    <div class="inner-section-title claim-top-message"><p>One-Time Price for all 3 eBooks:</p></div>
                     <div class="final-offer-block">
                         <div class="final-offer" onclick="getExclusiveOffer()">
                             <img class="price-green-circle" src="https://tanyamiranda.github.io/sign-up/images/swirl-price.png" />
@@ -212,10 +210,11 @@ body {
 .inner-section-wrapper {
     width: 100%;
     padding: 40px 0;  
-    display: inline-block;
+    display: block;
     margin: auto;
 
     div {
+        display: block;
         margin: auto;
         justify-items: center;
     }
@@ -253,7 +252,7 @@ body {
         font-size: 36px;
         font-style: italic;
     }
-    #top-message {
+    #top-message, #one-time-offer-message {
         width: 400px;
         line-height: 35px;
         font-size: 22px;
@@ -375,7 +374,10 @@ body {
 
     .claim-top-message {
         color: black;
-        padding: 20px;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        display: block;
+        margin: auto;
     }
 
     .disclaimer {
@@ -387,19 +389,19 @@ body {
     }
 
     .claim-your-offer-button {
-        text-align: center;
+        margin: 20px auto;
     }
     .claim-your-offer-button button{
+        display: block;
+        margin: auto;
         background-color: darkgreen;
         color: white;
         padding: 20px;
-        margin: 20px 0;
         width: 275px;
         border-radius: 20px;
         font-size: 24px;
         font-weight: bold;
         font-family: Arial;
-        display: block;
         border: 1px solid darkgreen;
     }
 
@@ -457,7 +459,6 @@ body {
     #all-book-details {
         width: 100%;
         max-width: 700px;
-        display: inline-block;
     }
 
     #altogether-top-message {
@@ -609,9 +610,6 @@ body {
         height: 550px;
         background-image: url(https://tanyamiranda.github.io/sign-up/images/woman-mountain-3-dragons-little.png);
         
-        #top-section-wrapper{
-            padding-top: 60px !important;
-        }
         #welcome-title {
             font-size: 30px;
         }
@@ -621,13 +619,18 @@ body {
             line-height: 23px;
         }
         #one-time-offer-message {
+            font-size: 16px;
+            display: block;
+            margin: 20px auto;
+            width: 170px;
+            line-height: 25px;
+            letter-spacing: .5px;
             background: black;
             color: white;
             border-radius: 15px;
-            padding: 25px;
+            padding: 10px 20px;
             margin-top: 20px;
             border: 1px silver solid;
-            width: 150px;
         }
     }
     
@@ -722,8 +725,6 @@ body {
         .book-detail-block {
             display: block;
             width: 290px;
-            margin: auto;
-            margin-bottom: 40px !important;
             padding: 40px 20px;
 
             .book-info {
