@@ -192,7 +192,11 @@ a.no-style:visited {
 }
 
 .contact-link {
-	width: 200px;
+  width: 40px;
+  background: white;
+  border-radius: 100px;
+  padding: 5px;
+  margin: 10px;
 }
 
 
@@ -218,6 +222,4 @@ as when in landscape mode for some phones.
 		max-width: 600px;
 		margin: auto;
 	}
-
-
 }
