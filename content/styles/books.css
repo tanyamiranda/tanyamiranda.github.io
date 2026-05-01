@@ -118,14 +118,13 @@ BOOK PAGES
     display: block;
     width: 100%;
     text-align: center;
-    max-width: 900px;
     margin: auto;
 }
 
 .book-thumbnail {
     display: inline-block;
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
     padding: 15px;
 }
 
@@ -180,8 +179,8 @@ BOOK PAGES
 .personal-message {
     margin: auto;
     display: block;
-    font-family: "Dancing Script";
-    font-size: 24pt;
+    font-family: "Comic Neue";
+    font-size: 18pt;
     text-align: center;
     padding: 20px 0;
     width: 90%;
