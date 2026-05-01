@@ -29,7 +29,7 @@ BOOK PAGES
 
 #book-list-container {
     padding-bottom: 20px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -115,9 +115,11 @@ BOOK PAGES
 }
 
 .all-books {
-    display: inline-block;
+    display: block;
     width: 100%;
     text-align: center;
+    max-width: 900px;
+    margin: auto;
 }
 
 .book-thumbnail {
