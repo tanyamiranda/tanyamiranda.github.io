@@ -259,7 +259,7 @@ function loadBookVendorLinks() {
             "<div id='all-books-footer'>" +
                 "<div>" +
                     "<a href='https://amzn.to/3UoMI0b' target='_blank' id='amazon'><img class='bookSellerButton' src='https://tanyamiranda.github.io/content/images/store-amazon.png' width='80px' height='auto'></a>" +
-                    "<a href='https://www.barnesandnoble.com/s/%22Tanya%20Miranda%22' target='_blank' id='nook'><img class='bookSellerButton' src='https://tanyamiranda.github.io/content/images/store-bn.png' width='80px' height='auto'></a>" +
+                    "<a href='https://www.barnesandnoble.com/search?attributes.contributorId=15322530&contributorName=Tanya%20Miranda' target='_blank' id='nook'><img class='bookSellerButton' src='https://tanyamiranda.github.io/content/images/store-bn.png' width='80px' height='auto'></a>" +
                     "<a href='https://itunes.apple.com/us/author/tanya-miranda/id641906457?mt=11' target='_blank' id='apple'><img class='bookSellerButton' src='https://tanyamiranda.github.io/content/images/store-ibooks.png' width='80px' height='auto'></a>" +
                     "<a href='https://play.google.com/store/books/author?id=Tanya+Miranda' target='_blank' id='google'><img class='bookSellerButton' src='https://tanyamiranda.github.io/content/images/store-google.png' width='80px' height='auto'></a>" +
                     "<a href='https://www.kobo.com/us/en/author/tanya-miranda' target='_blank' id='kobo'><img class='bookSellerButton' src='https://tanyamiranda.github.io/content/images/store-kobo.png' width='80px' height='auto'></a>" +
